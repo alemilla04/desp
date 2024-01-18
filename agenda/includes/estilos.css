@@ -1,0 +1,60 @@
+/*   HOJA DE ESTILOS        */
+
+body {
+	font-family: Arial, sans-serif;
+        background-size: cover;
+	background-color: #999999;
+}
+
+section{
+    margin: 0 auto;
+    /*color:#563214;*/
+    width:50%;
+}
+
+table {
+	border: 3px solid green;
+}
+
+th {
+	background-color: aquamarine;
+	color: brown;
+}
+
+th,
+td,
+tr {
+	border: 1px solid green;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: center;
+	padding: 5px;
+}
+
+h1,
+h2 {
+	color: brown;        
+	text-align: center;
+}
+
+footer {
+	margin: 20px;
+	text-align: center;
+}
+
+.borrar {
+	color: red;
+	font-size: 120%;
+}
+
+footer>a,
+body>a,
+p>a,
+.boton {
+	display: inline-block;
+	background-color: lightgray;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	text-decoration: none;
+}

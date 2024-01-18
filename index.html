@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            width: 100%;
+            background-color: #e8e9e9;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: ; */
+            display: grid;
+            grid-template-areas: 
+            "encabezado"
+            "menu"
+            "principal"
+            "pie"
+            ;
+            grid-template-rows: auto auto 1fr auto;
+            gap: 50px;
+        }
+
+        header {
+            margin-top: 20px;
+            grid-area: encabezado;
+        }
+
+        nav {
+            grid-area: menu;
+            background-color: black;
+        }
+         
+        main {
+            grid-area: principal;
+        }
+
+        footer {
+            grid-area: pie;
+        }
+
+        h1, h2, h3, p{
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        a:hover {
+            font-size: 25px;
+            background-color: rgba(221, 217, 217, 0.5);
+            padding: 26px;
+        }
+
+
+
+        div {
+            background-color: white;
+            box-shadow: 0px 0px 10px 1px grey;
+            width: 40rem;
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Alexa Milla Villavicencio</h1>
+        <h2>-- web personal en 000webhost.com --</h2>
+    </header>
+    <nav>  
+        <ul>
+            <li><a href="./index.html">Principal</a></li>
+            <li><a href="./agenda/index.php">Agenda</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div>
+            <h3>Bienvenido a mi blog</h3>
+            <p>En esta web tendreis acceso a noticias frescas y a mi tienda online. Os dejo una agenda de contactos por si os fuera útil. Espero os guste.</p>
+        </div>
+    </main>
+    <footer>© Derechos No Reservados 2021</footer>
+</body>
+</html>
